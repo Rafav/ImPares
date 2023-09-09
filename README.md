@@ -3,6 +3,7 @@
 Extensión para descargar masivamente imágenes de PARES
 <hr>
 
+![Alt text](img/legajo.jpg "Legajo decorativo")
 ## Requisitos
 
 Google Chrome 88 o superior
