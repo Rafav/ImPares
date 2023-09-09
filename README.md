@@ -1,6 +1,6 @@
 # ImPares Extension: Descarga masiva de imágenes del Portal de Archivos Españoles (PARES)
 
-Extensión para descargar maasivamente imágenes de PARES
+Extensión para descargar masivamente imágenes de PARES
 <hr>
 
 ##Requisitos
