@@ -10,7 +10,7 @@ Google Chrome 88 o superior
 
 ## Uso
 
-Una vez localizado el documento, click en el icono de la extensión y pinchar en Descargar. La ruta del documento debe empezar por http://pares.mcu.es/ParesBusquedas20/catalogo/show/
+Una vez localizado el documento, click en el icono de la extensión y pinchar en Descargar. La ruta del documento debe empezar por https://pares.mcu.es/ParesBusquedas20/catalogo/show/
 
 ## Licencia
 
