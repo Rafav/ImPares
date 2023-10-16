@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ImPares",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Descarga masiva de imágenes de Pares",
   "permissions": [
     "activeTab",
@@ -11,7 +11,7 @@
   "action": {
     "default_popup": "popup.html",
     "matches": [
-      "http://pares.mcu.es/ParesBusquedas20/catalogo/show/*"
+      "*://pares.mcu.es/ParesBusquedas20/catalogo/show/*"
     ],
     "default_icon": {
       "16": "img/icon16.png",
