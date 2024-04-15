@@ -20,7 +20,7 @@ function startContentScript() {
   var totalElement = document.querySelector('input[name="txt_imagenFin"]');
 
   if (!dbCodeElement || !totalElement) {
-    alert("No se encontraron uno o más elementos requeridos para la descarga.");
+    alert("No se encontraron elementos requeridos para la descarga.");
   } else {
     var dbCode = dbCodeElement.value;
     var total = totalElement.value;
