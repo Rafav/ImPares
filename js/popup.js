@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   startButton.addEventListener('click', function () {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       const activeTab = tabs[0];
-      const message = { action: 'scrapePage' };
 
       // Enviar un mensaje al script de contenido (content.js)
       chrome.scripting.executeScript({
