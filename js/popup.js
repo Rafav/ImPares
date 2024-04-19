@@ -25,7 +25,7 @@ function startContentScript() {
     var total = totalElement.value;
 
     if (dbCode === "" || total === "") {
-      alert("el identificador del documento o el total de imágenes están vacíos.");
+      alert("El identificador del documento o el total de imágenes están vacíos.");
       return; 
     }
 
