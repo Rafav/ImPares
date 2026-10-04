@@ -1,18 +1,18 @@
 {
   "manifest_version": 3,
   "name": "ImPares",
-  "version": "1.0.2",
-  "description": "Descarga masiva de imágenes de Pares",
+  "version": "2.1.0",
+  "description": "Descarga masiva y organizada de documentos digitalizados del Portal de Archivos Españoles (PARES)",
   "permissions": [
     "activeTab",
     "scripting",
     "downloads"
   ],
+  "host_permissions": [
+    "https://pares.cultura.gob.es/*"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "matches": [
-      "*://pares.mcu.es/ParesBusquedas20/catalogo/show/*"
-    ],
     "default_icon": {
       "16": "img/icon16.png",
       "48": "img/icon48.png",
@@ -26,5 +26,15 @@
   },
   "background": {
     "service_worker": "js/background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/*",
+        "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/*"
+      ],
+      "js": ["js/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }

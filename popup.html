@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Descarga de imágenes de PARES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tombo - Descargador PARES</title>
+  <style>
+    body {
+      width: 320px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin: 0 0 15px 0;
+      color: #333;
+      text-align: center;
+    }
+    
+    #status {
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #f5f5f5;
+      border-radius: 4px;
+      font-size: 13px;
+      text-align: center;
+      min-height: 20px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    
+    button:hover:not(:disabled) {
+      background: #45a049;
+    }
+    
+    button:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+    }
+
+    button.danger {
+      background: #f44336;
+      margin-top: 8px;
+    }
+
+    button.danger:hover:not(:disabled) {
+      background: #d32f2f;
+    }
+
+    .info {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e3f2fd;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #1976d2;
+    }
+    
+    .info strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-  <button id="startButton">Descargar</button>
+  <h1>📥 Descargador PARES</h1>
+  
+  <div id="status">Cargando...</div>
+  
+  <button id="startButton" disabled>Iniciar Descarga</button>
+  <button id="cancelButton" class="danger" style="display:none;">Cancelar Descarga</button>
+
+  <div class="info">
+    <strong>ℹ️ Información:</strong>
+    Las imágenes se descargarán en:<br>
+    <code>PARES/[ID_documento]/</code>
+  </div>
+  
   <script src="js/popup.js"></script>
 </body>
 </html>
